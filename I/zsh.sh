@@ -9,4 +9,3 @@ link=https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh -c "$(wget $link -O -)"
 python3 zsh.py
 echo done
-gnome-session-quit
