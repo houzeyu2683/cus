@@ -7,13 +7,5 @@ link=$url$file
 wget $link
 sh $file
 rm $file
-
-if [ 'zsh' = $(echo $SHELL | cut -d"/" -f 4) ]
-then
-    echo '\n'export PATH="$"PATH:"'"/home/$USER/.conda/bin"'" >> ~/.zshrc
-fi
-if [ 'bash' = $(echo $SHELL | cut -d"/" -f 4) ]
-then
-    echo '\n'export PATH="$"PATH:"'"/home/$USER/.conda/bin"'" >> ~/.bashrc
-fi
+echo '\n'export PATH="$"PATH:"'"/home/$USER/.conda/bin"'" >> ~/.bashrc
 echo done
