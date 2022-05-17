@@ -1,5 +1,5 @@
-file="code_1.56.2-1620838498_amd64.deb"
-url="https://az764295.vo.msecnd.net/stable/054a9295330880ed74ceaedda236253b4f39a335/"
+file="code_1.67.1-1651841865_amd64.deb"
+url = "https://az764295.vo.msecnd.net/stable/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/"
 link="$url$file"
 wget $link
 sudo dpkg -i $file
