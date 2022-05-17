@@ -7,33 +7,23 @@ with open('/etc/conky/conky.conf', 'r') as paper:
     text = paper.readlines()
     pass
 
-for l, t in enumerate(text):
-
-    if("alignment" in t):
-
-        key, value = t.split("=")
-        value = " 'top_right',\n"
-        update = key + '=' + value
-        text[l] = update
-        break
-
-    if("own_window_argb_visual" in t):
-
-        key, value = t.split("=")
-        value = " 'true',\n"
-        update = key + '=' + value
-        text[l] = update
-        break
-
-    if("own_window_argb_value" in t):
-
-        key, value = t.split("=")
-        value = " '0',\n"
-        update = key + '=' + value
-        text[l] = update
-        break
+context = []
+for _, t in enumerate(text):
+    
+    if(("conky.config" in t) and ("{" in t)):
         
-    pass
+        context += [t]
+        context += ["    own_window_argb_visual = true,"]
+        context += ["    own_window_argb_value = 0,"]
+        continue
+        
+    if("alignment" in t):
+        
+        context += ["    alignment = 'top_right',"]
+        continue
+    
+    context += [t]
+    continue
 
 with open('/etc/conky/conky.conf', 'w') as paper:
 
