@@ -27,5 +27,5 @@ for _, t in enumerate(text):
 
 with open('/etc/conky/conky.conf', 'w') as paper:
 
-    paper.writelines(text)
+    paper.writelines(context)
     pass
