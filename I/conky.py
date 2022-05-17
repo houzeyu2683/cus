@@ -17,6 +17,22 @@ for l, t in enumerate(text):
         text[l] = update
         break
 
+    if("own_window_argb_visual" in t):
+
+        key, value = t.split("=")
+        value = " 'true',\n"
+        update = key + '=' + value
+        text[l] = update
+        break
+
+    if("own_window_argb_value" in t):
+
+        key, value = t.split("=")
+        value = " '0',\n"
+        update = key + '=' + value
+        text[l] = update
+        break
+        
     pass
 
 with open('/etc/conky/conky.conf', 'w') as paper:
