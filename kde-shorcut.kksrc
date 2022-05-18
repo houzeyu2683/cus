@@ -2,13 +2,13 @@
 switch-to-activity-bbe869c5-3fd8-4893-9edf-26fa1f3e6aee=
 
 [KDE Keyboard Layout Switcher][Global Shortcuts]
-Switch to Next Keyboard Layout=Meta+Space
+Switch to Next Keyboard Layout=
 
 [StandardShortcuts]
 AboutApp=
 AboutKDE=
 Activate Next Tab=Ctrl+PgDown; Ctrl+]
-Activate Previous Tab=Ctrl+PgUp; Ctrl+[
+Activate Previous Tab=Ctrl+[; Ctrl+PgUp
 ActualSize=Ctrl+0
 AddBookmark=Ctrl+B
 Back=Back
@@ -16,12 +16,12 @@ BackwardWord=Ctrl+Left
 Begin=Ctrl+Home
 BeginningOfLine=Home
 Clear=
-Close=Ctrl+W; Ctrl+Esc
+Close=Ctrl+Esc; Ctrl+W
 ConfigureNotifications=
 ConfigureToolbars=
-Copy=Ctrl+Ins; Ctrl+C
+Copy=Ctrl+C; Ctrl+Ins
 CreateFolder=F10
-Cut=Shift+Del; Ctrl+X
+Cut=Ctrl+X; Shift+Del
 DeleteFile=Shift+Del
 DeleteWordBack=Ctrl+Backspace
 DeleteWordForward=Ctrl+Del
@@ -45,7 +45,7 @@ Goto=
 GotoLine=Ctrl+G
 GotoPage=
 Help=F1
-Home=Alt+Home; Home Page
+Home=Home Page; Alt+Home
 KeyBindings=Ctrl+Alt+,
 Mail=
 MoveToTrash=Del
@@ -54,7 +54,7 @@ Next=PgDown
 NextCompletion=Ctrl+Down
 Open=Ctrl+O
 OpenRecent=
-Paste=Ctrl+V; Shift+Ins
+Paste=Shift+Ins; Ctrl+V
 Paste Selection=Ctrl+Shift+Ins
 Preferences=Ctrl+Shift+,
 PrevCompletion=Ctrl+Up
@@ -80,7 +80,7 @@ ShowStatusbar=
 ShowToolbar=
 Spelling=
 SubstringCompletion=Ctrl+T
-SwitchApplicationLanguage=
+SwitchApplicationLanguage=Meta+Space
 TextCompletion=Ctrl+E
 TipofDay=
 Undo=Ctrl+Z
@@ -265,6 +265,16 @@ Window to Screen 7=
 view_actual_size=
 view_zoom_in=Alt+=
 view_zoom_out=Alt+-
+
+[mediacontrol][Global Shortcuts]
+mediavolumedown=
+mediavolumeup=
+nextmedia=Media Next
+pausemedia=Media Pause
+playmedia=
+playpausemedia=Media Play
+previousmedia=Media Previous
+stopmedia=Media Stop
 
 [org.kde.dolphin.desktop][Global Shortcuts]
 _launch=
