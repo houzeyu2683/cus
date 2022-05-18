@@ -18,10 +18,6 @@ Show System Activity=none,Ctrl+Esc,顯示系統活動
 _k_friendly_name=KDE Daemon
 display=Display,Display\tMeta+P,切換顯示
 
-[khotkeys]
-_k_friendly_name=Custom Shortcuts Service
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,搜尋
-
 [kmix]
 _k_friendly_name=音效音量
 decrease_microphone_volume=Microphone Volume Down,Microphone Volume Down,遞減麥克風音量
