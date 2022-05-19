@@ -1,0 +1,4 @@
+
+[guake.desktop]
+_k_friendly_name=Guake Terminal
+_launch=Meta+T,none,Guake Terminal
