@@ -3,7 +3,7 @@ restore-tabs-notify=false
 restore-tabs-startup=false
 save-tabs-when-changed=false
 use-popup=false
-window-height=100
+window-height=50
 
 [apps/guake/keybindings/global]
 show-focus='<Super>t'
