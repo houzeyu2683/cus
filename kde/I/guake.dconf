@@ -58,5 +58,5 @@ zoom-in-alt=''
 zoom-out=''
 
 [apps/guake/style/background]
-transparency=50
+transparency=75
 
