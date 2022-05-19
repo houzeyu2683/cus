@@ -4,6 +4,6 @@ sudo apt install guake -y
 dconf load / < guake.dconf
 sudo rm -rf /usr/share/applications/guake-prefs.desktop
 sudo rm -rf /usr/share/applications/guake.desktop
-guake &
+#guake &
 echo done
 
