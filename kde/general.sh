@@ -1,3 +1,4 @@
+sh language.sh
 sh shortcut.sh
 sh guake.sh
 sh chewing.sh
