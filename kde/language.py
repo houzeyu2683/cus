@@ -6,9 +6,12 @@ dictionary = {
     '桌面':"Desktop", 
     "文件":"Documents", 
     "下載":"Downloads",
+    'Desktop':"Desktop", 
+    "Documents":"Documents", 
+    "Downloads":"Downloads",
     "Music":"Music",
     "Pictures":"Pictures",
-    "Videos":"Videos",
+    "Videos":"Videos"
 }
 path = "{}/.local/share/user-places.xbel".format(os.path.expanduser('~'))
 tree = xml.etree.ElementTree.parse(path)
