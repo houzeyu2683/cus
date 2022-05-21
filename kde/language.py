@@ -20,8 +20,18 @@ for item in loop:
     if(title in dictionary.keys()):
 
         e = item.attrib['href'].split('/')
-        e[-1] = dictionary[title]
-        item.attrib['href'] = '/'.join(e) + '/'
+        if(e[-1]!=""): 
+
+            e[-1] = dictionary[title] 
+            item.attrib['href'] = '/'.join(e) + '/'
+            pass
+
+        else:
+
+            e[-2] = dictionary[title]
+            item.attrib['href'] = '/'.join(e)
+            pass
+
         continue        
     
     continue
