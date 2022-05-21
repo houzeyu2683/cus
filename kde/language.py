@@ -10,7 +10,7 @@ dictionary = {
     "Videos":"Videos",
 }
 
-path = "~/.local/share/user-places-xbel"
+path = "~/.local/share/user-places.xbel"
 tree = xml.etree.ElementTree.parse(path)
 root = tree.getroot()
 loop = root.findall('bookmark')
