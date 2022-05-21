@@ -1,4 +1,5 @@
 
+import os
 import xml.etree.ElementTree
 
 dictionary = {
@@ -9,8 +10,7 @@ dictionary = {
     "Pictures":"Pictures",
     "Videos":"Videos",
 }
-
-path = "~/.local/share/user-places.xbel"
+path = "{}/.local/share/user-places.xbel".format(os.path.expanduser('~'))
 tree = xml.etree.ElementTree.parse(path)
 root = tree.getroot()
 loop = root.findall('bookmark')
