@@ -1,9 +1,14 @@
 from shutil import copyfile
 import os
 
-autostart = "/etc/xdg/autostart/"
-os.makedirs(autostart, exist_ok=True)
-copyfile('./conky.desktop', '{}conky.desktop'.format(autostart))
+#autostart = "/etc/xdg/autostart/"
+#os.makedirs(autostart, exist_ok=True)
+#copyfile('./conky.desktop', '{}conky.desktop'.format(autostart))
+#copyfile("/usr/share/applications/conky.desktop", '{}conky.desktop'.format(autostart))
+copyfile(
+    "/usr/share/applications/conky.desktop",
+    "/etc/xdg/autostart/conky.desktop"
+)
 
 with open('/etc/conky/conky.conf', 'r') as paper:
 
