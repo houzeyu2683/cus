@@ -7,9 +7,9 @@ command='guake'
 name='guake'
 
 [apps/guake/general]
-restore-tabs-notify=false
-restore-tabs-startup=false
-save-tabs-when-changed=false
+#restore-tabs-notify=false
+#restore-tabs-startup=false
+#save-tabs-when-changed=false
 use-popup=false
 window-width=75
 
