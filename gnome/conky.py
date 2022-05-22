@@ -25,10 +25,10 @@ for _, t in enumerate(text):
         context += ["    alignment = 'top_right',\n"]
         continue
 
-    if("own_window_type" in t):
+#    if("own_window_type" in t):
 
-        context += ["    own_window_type = 'dock',\n"]
-        continue
+#        context += ["    own_window_type = 'dock',\n"]
+#        continue
 
     context += [t]
     continue
