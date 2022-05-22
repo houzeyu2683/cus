@@ -27,7 +27,7 @@ for _, t in enumerate(text):
 
     if("own_window_type" in t):
 
-        context += ["    own_window_type = 'dock',\n"]
+        context += ["    own_window_type = 'desktop',\n"]
         continue
 
     context += [t]
