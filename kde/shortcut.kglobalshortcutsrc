@@ -264,7 +264,3 @@ kcm-lookandfeel=none,none,全域主題
 kcm-users=none,none,使用者
 powerdevilprofilesconfig=none,none,節能選項
 screenlocker=none,none,螢幕鎖定
-
-#[yakuake]
-#_k_friendly_name=Yakuake
-#toggle-window-state=Meta+T,F12,開啟/收回 Yakuake
