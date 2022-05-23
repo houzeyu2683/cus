@@ -5,6 +5,7 @@ link="$url$file"
 wget $link
 sudo dpkg -i $file
 rm $file
+sudo apt --fix-broken install
 echo done
 #sudo apt update
 #sudo apt install anydesk -y
