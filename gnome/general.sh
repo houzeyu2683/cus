@@ -1,6 +1,6 @@
 
 ##  Basic setting.
-sh removal.sh
+sh initialization.sh
 sh language.sh
 sh shortcut.sh
 
