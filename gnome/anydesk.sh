@@ -1,4 +1,4 @@
-sudo apt install libgtkglext1 libpangox-1.0-0 -y
+#sudo apt install libgtkglext1 libpangox-1.0-0 -y
 file="anydesk_6.1.1-1_amd64.deb"
 url="https://download.anydesk.com/linux/"
 link="$url$file"
