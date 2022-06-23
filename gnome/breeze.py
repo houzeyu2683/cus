@@ -26,8 +26,8 @@ for index, item in enumerate(document):
 
 if(theme==None and value==None):
 
-    # document.append("GRUB_THEME=/boot/grub/themes/breeze/theme.txt'\n")
-    document.append("GRUB_THEME=/usr/share/grub/themes/breeze/theme.txt'\n")
+    # document.append("GRUB_THEME=/boot/grub/themes/breeze/theme.txt\n")
+    document.append("GRUB_THEME=/usr/share/grub/themes/breeze/theme.txt\n")
     pass
 
 with open(path, 'w') as paper:
