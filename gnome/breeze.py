@@ -1,7 +1,8 @@
 
 import re
 
-path = '/usr/share/grub/default/grub'
+# path = '/usr/share/grub/default/grub'
+path = '/etc/default/grub'
 with open(path, 'r') as paper:
 
     document = paper.readlines()
@@ -17,14 +18,16 @@ for index, item in enumerate(document):
 
     if('GRUB_THEME' in item):
 
-        theme = '/boot/grub/themes/breeze/theme.txt'
+        # theme = '/boot/grub/themes/breeze/theme.txt'
+        theme = '/usr/share/grub/themes/breeze/theme.txt'
         value = re.sub("[^GRUB_THEME=]", "", item) + theme
         break
     pass
 
 if(theme==None and value==None):
 
-    document.append("GRUB_THEME=/boot/grub/themes/breeze/theme.txt'\n")
+    # document.append("GRUB_THEME=/boot/grub/themes/breeze/theme.txt'\n")
+    document.append("GRUB_THEME=/usr/share/grub/themes/breeze/theme.txt'\n")
     pass
 
 with open(path, 'w') as paper:
